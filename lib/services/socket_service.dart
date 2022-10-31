@@ -18,7 +18,8 @@ class SocketService with ChangeNotifier {
   }
 
   void _initConfig() {
-    String urlSocket = 'http://192.168.0.25:3000';
+    //String urlSocket = 'http://192.168.0.25:3000';
+    String urlSocket = 'https://sockets-server-ram.herokuapp.com/';
 
     this._socket = IO.io(
         urlSocket,
